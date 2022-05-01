@@ -1,0 +1,39 @@
+
+.root{
+    -fx-font-size: 14;
+    -fx-font-family: "Arial";
+}
+
+.label{
+    -fx-font-weight:bold;
+    -fx-text-fill:navy;
+    -fx-padding: 0 10 0 10;
+}
+
+.header{
+    -fx-font-size: 19.6;
+    -fx-text-fill: darkgreen;
+    -fx-padding: 20 0 10 0;
+}
+
+.gridPane{
+    -fx-border-color: navy;
+    -fx-border-width: 4px;
+    -fx-border-insets: 6px;
+    -fx-padding: 4 4 4 4;
+    -fx-hgap: 5px;
+    -fx-vgap: 5px;
+}
+
+.error{
+    -fx-text-fill: red;
+}
+
+.textField{
+    -fx-font-family: monospaced;
+}
+
+.listView{
+    -fx-font-family: monospaced;
+}
+

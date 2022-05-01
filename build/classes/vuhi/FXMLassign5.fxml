@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER"  prefHeight="600.0" prefWidth="620.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vuhi.FXMLassign5Controller">
+    <stylesheets>
+        <URL value="@fxmlassign5.css"/>
+    </stylesheets>
+    
+        <Label fx:id="header" text="Inventory Tracker"/>
+   
+        <GridPane fx:id="pane" alignment="CENTER" >  
+            <children>
+            <Label fx:id="lblId" GridPane.rowIndex="0" GridPane.columnIndex="0"  GridPane.halignment="RIGHT" /> 
+            <TextField fx:id="itemId"  GridPane.rowIndex="0" GridPane.columnIndex="1" editable="false"  /> 
+            <Label fx:id="lblName" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT" /> 
+            <TextField fx:id="itemName"  GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="3" editable="false"/> 
+            <Label fx:id="lblQoh" GridPane.rowIndex="2" GridPane.columnIndex="0"  GridPane.halignment="RIGHT"/> 
+            <TextField fx:id="qoh" GridPane.rowIndex="2" GridPane.columnIndex="1" editable="false"/> 
+            <Label fx:id="lblRop" GridPane.rowIndex="2" GridPane.columnIndex="2"  GridPane.halignment="RIGHT"/> 
+            <TextField fx:id="rop" GridPane.rowIndex="2" GridPane.columnIndex="3" editable="false"/> 
+            <Label fx:id="lblPrice" GridPane.rowIndex="3" GridPane.columnIndex="0"  GridPane.halignment="RIGHT"/> 
+            <TextField fx:id="sellPrice" GridPane.rowIndex="3" GridPane.columnIndex="1" editable="false"/> 
+            <HBox GridPane.rowIndex="4" GridPane.columnIndex="1" alignment="CENTER_RIGHT">
+                <Button mnemonicParsing="true" text="_Add" fx:id="add"/>
+                <Button mnemonicParsing="true" text="_Save" fx:id="save" disable="true"/>
+            </HBox>
+            <HBox GridPane.rowIndex="4" GridPane.columnIndex="2">
+                <Button mnemonicParsing="true" text="_Oders" fx:id="order"/>
+                <Button mnemonicParsing="true" text="E_xit" fx:id="exit"/>
+            </HBox>
+            </children>
+        </GridPane>
+
+        
+        <ListView fx:id="reorder"/>
+        <Label fx:id="message" />
+        
+</VBox>
+    
+    
+
